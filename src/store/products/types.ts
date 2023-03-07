@@ -1,7 +1,7 @@
 import {Product} from "../../types/product";
 
 export interface ProductState {
-    product: Product[]
+    products: Product[]
     loading: boolean
     error: null | string
 }
@@ -26,4 +26,4 @@ interface GetProductErrorAction {
     payload: string
 }
 
-export type GetUserAction = GetProductsAction | GetProductsSuccessAction | GetProductErrorAction;
+export type GetProductAction = GetProductsAction | GetProductsSuccessAction | GetProductErrorAction;
