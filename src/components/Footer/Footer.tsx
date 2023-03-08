@@ -12,8 +12,8 @@ const Footer = () => {
                 return (
                     <div key={data.id} className='footer-container'>
                         <span className='footer-label'>{data.label}</span>
-                        {data.value.map(item=>{
-                            return(
+                        {data.value.map(item => {
+                            return (
                                 <ul key={item}>
                                     <li className='footer-item'>{item}</li>
                                 </ul>
