@@ -12,7 +12,7 @@ export enum GetProductsActionTypes {
     GET_PRODUCTS_ERROR = 'GET_PRODUCTS_ERROR'
 }
 
-interface GetProductsAction {
+interface GetProductsRequestAction {
     type: GetProductsActionTypes.GET_PRODUCTS_REQUEST
 }
 
@@ -26,4 +26,4 @@ interface GetProductErrorAction {
     payload: string
 }
 
-export type GetProductAction = GetProductsAction | GetProductsSuccessAction | GetProductErrorAction;
+export type GetProductAction = GetProductsRequestAction | GetProductsSuccessAction | GetProductErrorAction;
