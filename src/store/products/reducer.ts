@@ -11,7 +11,7 @@ export const productReducer = (state = initialState, action: GetProductAction): 
             return {...state, loading: true, error: null, products: []}
         case GetProductsActionTypes.GET_PRODUCTS_SUCCESS:
             return {...state, loading: false, error: null, products: action.payload}
-        case GetProductsActionTypes.GET_USER_ERROR:
+        case GetProductsActionTypes.GET_PRODUCTS_ERROR:
             return {...state, loading: false, error: action.payload, products: []}
         default:
             return state

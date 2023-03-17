@@ -10,7 +10,7 @@ export const getProduct = () => {
             const response = await axios.get(`${BASE_URL}/products`);
             dispatch({type: GetProductsActionTypes.GET_PRODUCTS_SUCCESS, payload: response.data})
         } catch (error) {
-            dispatch(({type: GetProductsActionTypes.GET_USER_ERROR, payload: 'Error Loading'}))
+            dispatch(({type: GetProductsActionTypes.GET_PRODUCTS_ERROR, payload: 'Error Loading'}))
         }
     }
 

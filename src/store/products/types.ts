@@ -9,7 +9,7 @@ export interface ProductState {
 export enum GetProductsActionTypes {
     GET_PRODUCTS_REQUEST = 'GET_PRODUCTS_REQUEST',
     GET_PRODUCTS_SUCCESS = 'ET_PRODUCTS_SUCCESS',
-    GET_USER_ERROR = 'GET_USER_ERROR'
+    GET_PRODUCTS_ERROR = 'GET_PRODUCTS_ERROR'
 }
 
 interface GetProductsAction {
@@ -22,7 +22,7 @@ interface GetProductsSuccessAction {
 }
 
 interface GetProductErrorAction {
-    type: GetProductsActionTypes.GET_USER_ERROR
+    type: GetProductsActionTypes.GET_PRODUCTS_ERROR
     payload: string
 }
 
