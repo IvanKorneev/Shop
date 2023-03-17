@@ -13,5 +13,4 @@ export const getProduct = () => {
             dispatch(({type: GetProductsActionTypes.GET_PRODUCTS_ERROR, payload: 'Error Loading'}))
         }
     }
-
 }
