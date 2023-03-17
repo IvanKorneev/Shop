@@ -23,3 +23,5 @@ interface GetCategoryError {
     type: GetCategoryActionTypes.GET_CATEGORY_ERROR
     payload: string
 }
+
+export type GetCategoryAction = GetCategoryRequestAction | GetCategorySuccessAction | GetCategoryError
